@@ -6,6 +6,7 @@ data:
       - system:nodes
       rolearn: arn:aws:iam::337909750491:role/eksctl-expense-nodegroup-expense-NodeInstanceRole-S1BoCDLaJkKM
       username: system:node:{{EC2PrivateDNSName}}
+
   mapUsers: |
     - groups:
       - expense-trainee
@@ -20,7 +21,6 @@ metadata:
   creationTimestamp: "2024-12-01T03:44:04Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "2904"
   uid: 0123cac5-f4d9-48b3-8a2a-3826fdbd88fa
 
   # mapUsers: |
